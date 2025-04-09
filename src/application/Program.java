@@ -35,12 +35,12 @@ public class Program {
 		for (Seller s : list) {
 			System.out.println(s);
 		}
-		/*
+		
 		System.out.println("\n----- test4: seller insert -----\n");
 		Seller sel2 = new Seller(null, "Dimas", "dimas@gmail.com", new Date(), 10000.0, new Department(4, null));
 		sellerDao.insert(sel2);
 		System.out.println("Inserted! new seller id: " + sel2.getId());
-		*/
+		
 		System.out.println("\n----- test5: seller update -----\n");
 		sel = sellerDao.findById(1);
 		sel.setName("Luana Orange");
