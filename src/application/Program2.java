@@ -31,13 +31,14 @@ public class Program2 {
 		System.out.println("Inserted! new department id: " + dep2.getId());
 		*/
 		System.out.println("\n----- TEST update -----");
-		dep = depDao.findById(4);
-		dep.setName("Marketing");
+		dep = depDao.findById(1);
+		dep.setName("Finance");
 		depDao.update(dep);
 		System.out.println("Updated!");
-		
+		/*
 		System.out.println("\n----- TEST delete -----");
 		depDao.deleteById(9);
 		System.out.println("Delete complete!");
+		*/
 	}
 }
