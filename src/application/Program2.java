@@ -24,11 +24,17 @@ public class Program2 {
 		for (Department d : list) {
 			System.out.println(d);
 		}
-		
+		/*
 		System.out.println("\n----- TEST insert -----");
 		Department dep2 = new Department(null, "Tecnology"); // O id (primeiro parâmetro do argumento) recebe null por ser auto incrementado no banco de dados.
 		depDao.insert(dep2);
 		System.out.println("Inserted! new department id: " + dep2.getId());
+		*/
+		System.out.println("\n----- TEST update -----");
+		dep = depDao.findById(4);
+		dep.setName("Marketing");
+		depDao.update(dep);
+		System.out.println("Updated!");
 	}
 
 }
